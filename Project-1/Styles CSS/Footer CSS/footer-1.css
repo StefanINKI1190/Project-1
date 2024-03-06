@@ -1,0 +1,109 @@
+/* =================================================================================================================
+                                                        --VARIABLES--
+================================================================================================================= */
+
+
+:root {
+    --f1-background-color: #2e2e34;
+    --f1-font-color: rgb(255, 0, 0);
+}
+
+
+/* =================================================================================================================
+                                                        --POSITION--
+================================================================================================================= */
+
+
+.n-columns-footer {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.n-columns-footer .main-header {
+    display: grid;
+    justify-content: center;
+    width: 120em;
+    padding-block: .1em;
+}
+
+.n-columns-footer .in-footer {
+    display: grid;
+    place-items: center;
+    margin-block: 2em;
+}
+
+.n-columns-footer .middle {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 60em;
+}
+
+.n-columns-footer .unordered-list {
+    display: block;
+}
+
+.n-columns-footer .header {
+    display: inline-block;
+}
+
+.n-columns-footer .list {
+    display: block;
+}
+
+.n-columns-footer .link {
+    display: inline-block;
+}
+
+
+/* =================================================================================================================
+                                                        --DESIGN--
+================================================================================================================= */
+
+
+.n-columns-footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, var(--f1-background-color), rgb(56, 56, 56));
+    border-top: 2px solid red;
+}
+
+.n-columns-footer .main-header {
+    color: rgb(127, 127, 127);
+    font-weight: 500;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border: 2px solid blue; */
+}
+
+.n-columns-footer .in-footer {
+    /* border: 2px solid blue; */
+}
+
+.n-columns-footer .middle {
+    /* border: 2px solid purple; */
+}
+
+.n-columns-footer .unordered-list {
+    list-style: none;
+    /* border: 2px solid yellow; */
+}
+
+.n-columns-footer .header {
+    color: rgb(199, 0, 0);
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-bottom: .4em;
+    /* border: 2px solid yellow; */
+}
+
+.n-columns-footer .list {
+    margin-bottom: .2em;
+    /* border: 2px solid green; */
+}
+
+.n-columns-footer .link {
+    text-decoration: none;
+    color: var(--f1-font-color);
+    /* border: 2px solid orange; */
+}
