@@ -1,0 +1,76 @@
+:root {
+    --m1-background-image: url(../../Pictures/red-bc.jpg);
+    --m1-font-color: rgb(210, 210, 210);
+}
+
+.columns-2-section {
+    display: grid;
+    place-content: center;
+    height: 35.5em;
+    width: 85em;
+    margin: auto;
+}
+
+.columns-2-section .in-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+}
+
+.columns-2-section .content {
+    width: 35em;
+    height: 22em;
+}
+
+.columns-2-section .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.columns-2-section .header {
+    display: inline-block;
+}
+
+.columns-2-section .paragraph {
+    display: inline-block;
+}
+
+.columns-2-section .button {
+    display: inline-block;
+    padding: .5em 1em .6em 1em;
+}
+
+.columns-2-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), var(--m1-background-image);
+    background-size: cover;
+    background-position: center;
+    color: var(--m1-font-color);
+    border-bottom: 1px solid red;
+}
+
+.columns-2-section .image {
+    border-radius: 15px;
+}
+
+.columns-2-section .header {
+    margin-bottom: 0.5em;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.columns-2-section .paragraph {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.columns-2-section .button {
+    text-decoration: none;
+    color: var(--m1-font-color);
+    font-size: 1.2em;
+    font-weight: 500;
+    border: 2px solid var(--m1-font-color);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .5);
+}
